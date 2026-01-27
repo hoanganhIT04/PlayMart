@@ -29,9 +29,9 @@ Route::get('/cart', function () {
     return Inertia::render('Cart');
 })->name('cart');
 
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return Inertia::render('Dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/account', function () {
@@ -52,3 +52,10 @@ Route::post('/otp-verify', [RegisteredUserController::class, 'verify'])
     ->name('verification.verify_otp');
 
 require __DIR__ . '/auth.php';
+
+// đăng xuất
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
+
+Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])
+    ->middleware('auth')
+    ->name('logout');

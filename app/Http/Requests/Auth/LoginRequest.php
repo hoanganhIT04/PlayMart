@@ -32,6 +32,15 @@ class LoginRequest extends FormRequest
         ];
     }
 
+    public function messages(): array
+    {
+        return [
+            'email.required' => 'Vui lòng nhập email.',
+            'email.email' => 'Email không đúng định dạng.',
+            'password.required' => 'Vui lòng nhập mật khẩu.',
+        ];
+    }
+
 
     /**
      * Attempt to authenticate the request's credentials.
@@ -42,16 +51,41 @@ class LoginRequest extends FormRequest
     {
         $this->ensureIsNotRateLimited();
 
-        if (!Auth::attempt($this->only('email', 'password'), $this->boolean('remember'))) {
+        $email = $this->input('email');
+        $password = $this->input('password');
+
+        // 1. Kiểm tra email có tồn tại không
+        $user = \App\Models\User::where('email', $email)->first();
+
+        if (!$user) {
+            throw ValidationException::withMessages([
+                'email' => 'Tài khoản không tồn tại trong hệ thống.',
+            ]);
+        }
+
+        // 2. Kiểm tra đã xác thực email chưa
+        if (is_null($user->email_verified_at)) {
+            throw ValidationException::withMessages([
+                'email' => 'Tài khoản chưa được xác thực email.',
+            ]);
+        }
+
+        // 3. Kiểm tra mật khẩu
+        if (!Auth::attempt(
+            ['email' => $email, 'password' => $password],
+            $this->boolean('remember')
+        )) {
             RateLimiter::hit($this->throttleKey());
 
             throw ValidationException::withMessages([
-                'email' => trans('auth.failed'),
+                'password' => 'Mật khẩu không chính xác.',
             ]);
         }
 
         RateLimiter::clear($this->throttleKey());
     }
+
+
 
     /**
      * Ensure the login request is not rate limited.
