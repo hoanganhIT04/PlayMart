@@ -29,9 +29,13 @@ Route::get('/cart', function () {
     return Inertia::render('Cart');
 })->name('cart');
 
-// Route::get('/dashboard', function () {
-//     return Inertia::render('Dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
+
+// admin routes
+Route::middleware(['auth', 'admin'])->group(function () {
+    Route::get('/admin/dashboard', function () {
+        return Inertia::render('Dashboard');
+    })->name('admin.dashboard');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/account', function () {

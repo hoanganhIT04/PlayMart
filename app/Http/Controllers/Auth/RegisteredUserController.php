@@ -69,6 +69,7 @@ class RegisteredUserController extends Controller
                 'name' => $request->name,
                 'password' => Hash::make($request->password),
                 'verification_code' => $otp,
+                'role' => 'user',
             ]);
         }
         // Scenario C: New User
@@ -78,6 +79,7 @@ class RegisteredUserController extends Controller
                 'email' => $request->email,
                 'password' => Hash::make($request->password),
                 'verification_code' => $otp,
+                'role' => 'user',
             ]);
         }
 
