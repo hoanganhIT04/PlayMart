@@ -157,7 +157,7 @@ onMounted(() => {
             <div class="products__container grid">
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-1-1.jpg"
                       alt=""
@@ -188,7 +188,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -213,7 +213,7 @@ onMounted(() => {
               </div>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-2-1.jpg"
                       alt=""
@@ -244,7 +244,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -269,7 +269,7 @@ onMounted(() => {
               </div>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-3-1.jpg"
                       alt=""
@@ -300,7 +300,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -325,7 +325,7 @@ onMounted(() => {
               </div>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-4-1.jpg"
                       alt=""
@@ -356,7 +356,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -381,7 +381,7 @@ onMounted(() => {
               </div>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-5-1.jpg"
                       alt=""
@@ -412,7 +412,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -437,7 +437,7 @@ onMounted(() => {
               </div>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-6-1.jpg"
                       alt=""
@@ -468,7 +468,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -493,7 +493,7 @@ onMounted(() => {
               </div>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-7-1.jpg"
                       alt=""
@@ -524,7 +524,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -549,7 +549,7 @@ onMounted(() => {
               </div>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-8-1.jpg"
                       alt=""
@@ -579,7 +579,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -608,7 +608,7 @@ onMounted(() => {
             <div class="products__container grid">
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-9-1.jpg"
                       alt=""
@@ -639,7 +639,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -664,7 +664,7 @@ onMounted(() => {
               </div>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-2-1.jpg"
                       alt=""
@@ -695,7 +695,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -720,7 +720,7 @@ onMounted(() => {
               </div>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-10-1.jpg"
                       alt=""
@@ -751,7 +751,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -776,7 +776,7 @@ onMounted(() => {
               </div>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-4-1.jpg"
                       alt=""
@@ -807,7 +807,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -832,7 +832,7 @@ onMounted(() => {
               </div>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-5-1.jpg"
                       alt=""
@@ -863,7 +863,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -888,7 +888,7 @@ onMounted(() => {
               </div>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-11-1.jpg"
                       alt=""
@@ -919,7 +919,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -944,7 +944,7 @@ onMounted(() => {
               </div>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-7-1.jpg"
                       alt=""
@@ -975,7 +975,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -1000,7 +1000,7 @@ onMounted(() => {
               </div>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-8-1.jpg"
                       alt=""
@@ -1030,7 +1030,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -1059,7 +1059,7 @@ onMounted(() => {
             <div class="products__container grid">
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-1-1.jpg"
                       alt=""
@@ -1090,7 +1090,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -1115,7 +1115,7 @@ onMounted(() => {
               </div>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-12-1.jpg"
                       alt=""
@@ -1146,7 +1146,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -1171,7 +1171,7 @@ onMounted(() => {
               </div>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-13-1.jpg"
                       alt=""
@@ -1202,7 +1202,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -1227,7 +1227,7 @@ onMounted(() => {
               </div>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-4-1.jpg"
                       alt=""
@@ -1258,7 +1258,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -1283,7 +1283,7 @@ onMounted(() => {
               </div>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-10-1.jpg"
                       alt=""
@@ -1314,7 +1314,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -1339,7 +1339,7 @@ onMounted(() => {
               </div>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-6-1.jpg"
                       alt=""
@@ -1370,7 +1370,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -1395,7 +1395,7 @@ onMounted(() => {
               </div>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-9-1.jpg"
                       alt=""
@@ -1426,7 +1426,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -1451,7 +1451,7 @@ onMounted(() => {
               </div>
               <div class="product__item">
                 <div class="product__banner">
-                  <a href="details.html" class="product__images">
+                  <a :href="route('detail')" class="product__images">
                     <img
                       src="/assets/img/product-8-1.jpg"
                       alt=""
@@ -1481,7 +1481,7 @@ onMounted(() => {
                 </div>
                 <div class="product__content">
                   <span class="product__category">Quần áo</span>
-                  <a href="details.html">
+                  <a :href="route('detail')">
                     <h3 class="product__title">Áo sơ mi họa tiết</h3>
                   </a>
                   <div class="product__rating">
@@ -1544,7 +1544,7 @@ onMounted(() => {
               </div>
             </div>
             <div class="deals__btn">
-              <a href="details.html" class="btn btn--md">Mua ngay</a>
+              <a :href="route('detail')" class="btn btn--md">Mua ngay</a>
             </div>
           </div>
           <div class="deals__item">
@@ -1579,7 +1579,7 @@ onMounted(() => {
               </div>
             </div>
             <div class="deals__btn">
-              <a href="details.html" class="btn btn--md">Mua ngay</a>
+              <a :href="route('detail')" class="btn btn--md">Mua ngay</a>
             </div>
           </div>
         </div>
@@ -1592,7 +1592,7 @@ onMounted(() => {
           <div class="swiper-wrapper">
             <div class="product__item swiper-slide">
               <div class="product__banner">
-                <a href="details.html" class="product__images">
+                <a :href="route('detail')" class="product__images">
                   <img
                     src="/assets/img/product-1-1.jpg"
                     alt=""
@@ -1619,7 +1619,7 @@ onMounted(() => {
               </div>
               <div class="product__content">
                 <span class="product__category">Clothing</span>
-                <a href="details.html">
+                <a :href="route('detail')">
                   <h3 class="product__title">Colorful Pattern Shirts</h3>
                 </a>
                 <div class="product__rating">
@@ -1644,7 +1644,7 @@ onMounted(() => {
             </div>
             <div class="product__item swiper-slide">
               <div class="product__banner">
-                <a href="details.html" class="product__images">
+                <a :href="route('detail')" class="product__images">
                   <img
                     src="/assets/img/product-2-1.jpg"
                     alt=""
@@ -1671,7 +1671,7 @@ onMounted(() => {
               </div>
               <div class="product__content">
                 <span class="product__category">Clothing</span>
-                <a href="details.html">
+                <a :href="route('detail')">
                   <h3 class="product__title">Colorful Pattern Shirts</h3>
                 </a>
                 <div class="product__rating">
@@ -1696,7 +1696,7 @@ onMounted(() => {
             </div>
             <div class="product__item swiper-slide">
               <div class="product__banner">
-                <a href="details.html" class="product__images">
+                <a :href="route('detail')" class="product__images">
                   <img
                     src="/assets/img/product-3-1.jpg"
                     alt=""
@@ -1723,7 +1723,7 @@ onMounted(() => {
               </div>
               <div class="product__content">
                 <span class="product__category">Clothing</span>
-                <a href="details.html">
+                <a :href="route('detail')">
                   <h3 class="product__title">Colorful Pattern Shirts</h3>
                 </a>
                 <div class="product__rating">
@@ -1748,7 +1748,7 @@ onMounted(() => {
             </div>
             <div class="product__item swiper-slide">
               <div class="product__banner">
-                <a href="details.html" class="product__images">
+                <a :href="route('detail')" class="product__images">
                   <img
                     src="/assets/img/product-4-1.jpg"
                     alt=""
@@ -1775,7 +1775,7 @@ onMounted(() => {
               </div>
               <div class="product__content">
                 <span class="product__category">Clothing</span>
-                <a href="details.html">
+                <a :href="route('detail')">
                   <h3 class="product__title">Colorful Pattern Shirts</h3>
                 </a>
                 <div class="product__rating">
@@ -1800,7 +1800,7 @@ onMounted(() => {
             </div>
             <div class="product__item swiper-slide">
               <div class="product__banner">
-                <a href="details.html" class="product__images">
+                <a :href="route('detail')" class="product__images">
                   <img
                     src="/assets/img/product-5-1.jpg"
                     alt=""
@@ -1827,7 +1827,7 @@ onMounted(() => {
               </div>
               <div class="product__content">
                 <span class="product__category">Clothing</span>
-                <a href="details.html">
+                <a :href="route('detail')">
                   <h3 class="product__title">Colorful Pattern Shirts</h3>
                 </a>
                 <div class="product__rating">
@@ -1852,7 +1852,7 @@ onMounted(() => {
             </div>
             <div class="product__item swiper-slide">
               <div class="product__banner">
-                <a href="details.html" class="product__images">
+                <a :href="route('detail')" class="product__images">
                   <img
                     src="/assets/img/product-6-1.jpg"
                     alt=""
@@ -1879,7 +1879,7 @@ onMounted(() => {
               </div>
               <div class="product__content">
                 <span class="product__category">Clothing</span>
-                <a href="details.html">
+                <a :href="route('detail')">
                   <h3 class="product__title">Colorful Pattern Shirts</h3>
                 </a>
                 <div class="product__rating">
@@ -1904,7 +1904,7 @@ onMounted(() => {
             </div>
             <div class="product__item swiper-slide">
               <div class="product__banner">
-                <a href="details.html" class="product__images">
+                <a :href="route('detail')" class="product__images">
                   <img
                     src="/assets/img/product-7-1.jpg"
                     alt=""
@@ -1931,7 +1931,7 @@ onMounted(() => {
               </div>
               <div class="product__content">
                 <span class="product__category">Clothing</span>
-                <a href="details.html">
+                <a :href="route('detail')">
                   <h3 class="product__title">Colorful Pattern Shirts</h3>
                 </a>
                 <div class="product__rating">
@@ -1971,7 +1971,7 @@ onMounted(() => {
           <div class="showcase__wrapper">
             <h3 class="section__title">Mới phát hành</h3>
             <div class="showcase__item">
-              <a href="details.html" class="showcase__img-box">
+              <a :href="route('detail')" class="showcase__img-box">
                 <img
                   src="/assets/img/showcase-img-1.jpg"
                   alt=""
@@ -1979,7 +1979,7 @@ onMounted(() => {
                 />
               </a>
               <div class="showcase__content">
-                <a href="details.html">
+                <a :href="route('detail')">
                   <h4 class="showcase__title">
                     Đầm cotton in hoa
                   </h4>
@@ -1991,7 +1991,7 @@ onMounted(() => {
               </div>
             </div>
             <div class="showcase__item">
-              <a href="details.html" class="showcase__img-box">
+              <a :href="route('detail')" class="showcase__img-box">
                 <img
                   src="/assets/img/showcase-img-2.jpg"
                   alt=""
@@ -1999,7 +1999,7 @@ onMounted(() => {
                 />
               </a>
               <div class="showcase__content">
-                <a href="details.html">
+                <a :href="route('detail')">
                   <h4 class="showcase__title">
                     Áo kiểu tay dài bèo nhún
                   </h4>
@@ -2011,7 +2011,7 @@ onMounted(() => {
               </div>
             </div>
             <div class="showcase__item">
-              <a href="details.html" class="showcase__img-box">
+              <a :href="route('detail')" class="showcase__img-box">
                 <img
                   src="/assets/img/showcase-img-3.jpg"
                   alt=""
@@ -2019,7 +2019,7 @@ onMounted(() => {
                 />
               </a>
               <div class="showcase__content">
-                <a href="details.html">
+                <a :href="route('detail')">
                   <h4 class="showcase__title">
                     Áo thun cổ V in nhiều màu
                   </h4>
@@ -2034,7 +2034,7 @@ onMounted(() => {
           <div class="showcase__wrapper">
             <h3 class="section__title">Ưu đãi & Xả hàng</h3>
             <div class="showcase__item">
-              <a href="details.html" class="showcase__img-box">
+              <a :href="route('detail')" class="showcase__img-box">
                 <img
                   src="/assets/img/showcase-img-4.jpg"
                   alt=""
@@ -2042,7 +2042,7 @@ onMounted(() => {
                 />
               </a>
               <div class="showcase__content">
-                <a href="details.html">
+                <a :href="route('detail')">
                   <h4 class="showcase__title">Áo thun in hình cá</h4>
                 </a>
                 <div class="showcase__price flex">
@@ -2052,7 +2052,7 @@ onMounted(() => {
               </div>
             </div>
             <div class="showcase__item">
-              <a href="details.html" class="showcase__img-box">
+              <a :href="route('detail')" class="showcase__img-box">
                 <img
                   src="/assets/img/showcase-img-5.jpg"
                   alt=""
@@ -2060,7 +2060,7 @@ onMounted(() => {
                 />
               </a>
               <div class="showcase__content">
-                <a href="details.html">
+                <a :href="route('detail')">
                   <h4 class="showcase__title">Đầm in hoa cổ điển</h4>
                 </a>
                 <div class="showcase__price flex">
@@ -2070,7 +2070,7 @@ onMounted(() => {
               </div>
             </div>
             <div class="showcase__item">
-              <a href="details.html" class="showcase__img-box">
+              <a :href="route('detail')" class="showcase__img-box">
                 <img
                   src="/assets/img/showcase-img-6.jpg"
                   alt=""
@@ -2078,7 +2078,7 @@ onMounted(() => {
                 />
               </a>
               <div class="showcase__content">
-                <a href="details.html">
+                <a :href="route('detail')">
                   <h4 class="showcase__title">
                     Áo thun sọc tròn nhiều màu
                   </h4>
@@ -2093,7 +2093,7 @@ onMounted(() => {
           <div class="showcase__wrapper">
             <h3 class="section__title">Bán chạy nhất</h3>
             <div class="showcase__item">
-              <a href="details.html" class="showcase__img-box">
+              <a :href="route('detail')" class="showcase__img-box">
                 <img
                   src="/assets/img/showcase-img-7.jpg"
                   alt=""
@@ -2101,7 +2101,7 @@ onMounted(() => {
                 />
               </a>
               <div class="showcase__content">
-                <a href="details.html">
+                <a :href="route('detail')">
                   <h4 class="showcase__title">
                     Áo kiểu tay dài in hình học
                   </h4>
@@ -2113,7 +2113,7 @@ onMounted(() => {
               </div>
             </div>
             <div class="showcase__item">
-              <a href="details.html" class="showcase__img-box">
+              <a :href="route('detail')" class="showcase__img-box">
                 <img
                   src="/assets/img/showcase-img-8.jpg"
                   alt=""
@@ -2121,7 +2121,7 @@ onMounted(() => {
                 />
               </a>
               <div class="showcase__content">
-                <a href="details.html">
+                <a :href="route('detail')">
                   <h4 class="showcase__title">Đầm Maxi in họa tiết</h4>
                 </a>
                 <div class="showcase__price flex">
@@ -2131,7 +2131,7 @@ onMounted(() => {
               </div>
             </div>
             <div class="showcase__item">
-              <a href="details.html" class="showcase__img-box">
+              <a :href="route('detail')" class="showcase__img-box">
                 <img
                   src="/assets/img/showcase-img-9.jpg"
                   alt=""
@@ -2139,7 +2139,7 @@ onMounted(() => {
                 />
               </a>
               <div class="showcase__content">
-                <a href="details.html">
+                <a :href="route('detail')">
                   <h4 class="showcase__title">
                     Jumpsuit dây in hoa cúc
                   </h4>
@@ -2154,7 +2154,7 @@ onMounted(() => {
           <div class="showcase__wrapper">
             <h3 class="section__title">Xu hướng</h3>
             <div class="showcase__item">
-              <a href="details.html" class="showcase__img-box">
+              <a :href="route('detail')" class="showcase__img-box">
                 <img
                   src="/assets/img/showcase-img-7.jpg"
                   alt=""
@@ -2162,7 +2162,7 @@ onMounted(() => {
                 />
               </a>
               <div class="showcase__content">
-                <a href="details.html">
+                <a :href="route('detail')">
                   <h4 class="showcase__title">Cotton in hoa thường ngày</h4>
                 </a>
                 <div class="showcase__price flex">
@@ -2172,7 +2172,7 @@ onMounted(() => {
               </div>
             </div>
             <div class="showcase__item">
-              <a href="details.html" class="showcase__img-box">
+              <a :href="route('detail')" class="showcase__img-box">
                 <img
                   src="/assets/img/showcase-img-8.jpg"
                   alt=""
@@ -2180,7 +2180,7 @@ onMounted(() => {
                 />
               </a>
               <div class="showcase__content">
-                <a href="details.html">
+                <a :href="route('detail')">
                   <h4 class="showcase__title">Tay dài bèo nhún trơn</h4>
                 </a>
                 <div class="showcase__price flex">
@@ -2190,7 +2190,7 @@ onMounted(() => {
               </div>
             </div>
             <div class="showcase__item">
-              <a href="details.html" class="showcase__img-box">
+              <a :href="route('detail')" class="showcase__img-box">
                 <img
                   src="/assets/img/showcase-img-9.jpg"
                   alt=""
@@ -2198,7 +2198,7 @@ onMounted(() => {
                 />
               </a>
               <div class="showcase__content">
-                <a href="details.html">
+                <a :href="route('detail')">
                   <h4 class="showcase__title">In nhiều màu cổ V</h4>
                 </a>
                 <div class="showcase__price flex">

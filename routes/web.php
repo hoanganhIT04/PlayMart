@@ -29,6 +29,17 @@ Route::get('/cart', function () {
     return Inertia::render('Cart');
 })->name('cart');
 
+Route::get('/wishlist', function () {
+    return Inertia::render('Wishlist');
+})->name('wishlist');
+
+Route::get('/detail', function () {
+    return Inertia::render('Detail');
+})->name('detail');
+
+Route::get('/checkout', function () {
+    return Inertia::render('Checkout');
+})->name('checkout');
 
 // admin routes
 Route::middleware(['auth', 'admin'])->group(function () {

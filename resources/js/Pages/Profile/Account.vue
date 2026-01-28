@@ -1,7 +1,13 @@
 <script setup>
 import MainLayout from '@/Layouts/MainLayout.vue';
 import { Head } from '@inertiajs/vue3';
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
+
+const activeTab = ref('dashboard');
+
+const changeTab = (tabName) => {
+  activeTab.value = tabName;
+};
 
 onMounted(() => {
   /* Đảm bảo Swiper đã được tải từ CDN trong app.blade.php */
@@ -47,35 +53,60 @@ onMounted(() => {
       <!--=============== BREADCRUMB ===============-->
       <section class="breadcrumb">
         <ul class="breadcrumb__list flex container">
-          <li><a href="index.html" class="breadcrumb__link">Trang chủ</a></li>
+          <li><a :href="route('home')" class="breadcrumb__link">Trang chủ</a></li>
           <li><span class="breadcrumb__link">></span></li>
-          <li><span class="breadcrumb__link">Tài khoản</span></li>
+          <li><a :href="route('account')" class="breadcrumb__link">Tài khoản</a></li>
         </ul>
       </section>
 
       <!--=============== ACCOUNTS ===============-->
       <section class="accounts section--lg">
         <div class="accounts__container container grid">
-          <div class="account__tabs">
-            <p class="account__tab active-tab" data-target="#dashboard">
-              <i class="fi fi-rs-settings-sliders"></i> Bảng điều khiển
-            </p>
-            <p class="account__tab" data-target="#orders">
-              <i class="fi fi-rs-shopping-bag"></i> Đơn hàng
-            </p>
-            <p class="account__tab" data-target="#update-profile">
-              <i class="fi fi-rs-user"></i> Cập nhật hồ sơ
-            </p>
-            <p class="account__tab" data-target="#address">
-              <i class="fi fi-rs-marker"></i> Địa chỉ của tôi
-            </p>
-            <p class="account__tab" data-target="#change-password">
-              <i class="fi fi-rs-settings-sliders"></i> Đổi mật khẩu
-            </p>
-            <p class="account__tab"><i class="fi fi-rs-exit"></i> Đăng xuất</p>
-          </div>
+        <div class="account__tabs">
+          <p 
+            class="account__tab" 
+            :class="{ 'active-tab': activeTab === 'dashboard' }" 
+            @click="changeTab('dashboard')"
+          >
+            <i class="fi fi-rs-settings-sliders"></i> Bảng điều khiển
+          </p>
+
+          <p 
+            class="account__tab" 
+            :class="{ 'active-tab': activeTab === 'orders' }" 
+            @click="changeTab('orders')"
+          >
+            <i class="fi fi-rs-shopping-bag"></i> Đơn hàng
+          </p>
+
+          <p 
+            class="account__tab" 
+            :class="{ 'active-tab': activeTab === 'update-profile' }" 
+            @click="changeTab('update-profile')"
+          >
+            <i class="fi fi-rs-user"></i> Cập nhật hồ sơ
+          </p>
+
+          <p 
+            class="account__tab" 
+            :class="{ 'active-tab': activeTab === 'address' }" 
+            @click="changeTab('address')"
+          >
+            <i class="fi fi-rs-marker"></i> Địa chỉ của tôi
+          </p>
+
+          <p 
+            class="account__tab" 
+            :class="{ 'active-tab': activeTab === 'change-password' }" 
+            @click="changeTab('change-password')"
+          >
+            <i class="fi fi-rs-settings-sliders"></i> Đổi mật khẩu
+          </p>
+
+          <p class="account__tab"><i class="fi fi-rs-exit"></i> Đăng xuất</p>
+        </div>
           <div class="tabs__content">
-            <div class="tab__content active-tab" content id="dashboard">
+            <div class="tab__content" :class="{ 'active-tab': activeTab === 'dashboard' }" v-if="activeTab === 'dashboard'">
               <h3 class="tab__header">Xin chào Rosie</h3>
               <div class="tab__body">
                 <p class="tab__description">
@@ -84,7 +115,8 @@ onMounted(() => {
                 </p>
               </div>
             </div>
-            <div class="tab__content" content id="orders">
+
+            <div class="tab__content" :class="{ 'active-tab': activeTab === 'orders' }" v-if="activeTab === 'orders'">
               <h3 class="tab__header">Đơn hàng của bạn</h3>
               <div class="tab__body">
                 <table class="placed__order-table">
@@ -122,8 +154,9 @@ onMounted(() => {
                   </tbody>
                 </table>
               </div>
-            </div>
-            <div class="tab__content" content id="update-profile">
+              </div>
+
+            <div class="tab__content" :class="{ 'active-tab': activeTab === 'update-profile' }" v-if="activeTab === 'update-profile'">
               <h3 class="tab__header">Cập nhật hồ sơ</h3>
               <div class="tab__body">
                 <form class="form grid">
@@ -133,8 +166,9 @@ onMounted(() => {
                   </div>
                 </form>
               </div>
-            </div>
-            <div class="tab__content" content id="address">
+              </div>
+
+            <div class="tab__content" :class="{ 'active-tab': activeTab === 'address' }" v-if="activeTab === 'address'">
               <h3 class="tab__header">Địa chỉ giao hàng</h3>
               <div class="tab__body">
                 <address class="address">
@@ -146,8 +180,9 @@ onMounted(() => {
                 <p class="city">New York</p>
                 <a href="#" class="edit">Chỉnh sửa</a>
               </div>
-            </div>
-            <div class="tab__content" content id="change-password">
+              </div>
+
+            <div class="tab__content" :class="{ 'active-tab': activeTab === 'change-password' }" v-if="activeTab === 'change-password'">
               <h3 class="tab__header">Đổi mật khẩu</h3>
               <div class="tab__body">
                 <form class="form grid">

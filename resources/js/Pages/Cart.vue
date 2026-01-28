@@ -47,7 +47,7 @@ onMounted(() => {
       <!--=============== BREADCRUMB ===============-->
       <section class="breadcrumb">
         <ul class="breadcrumb__list flex container">
-          <li><a href="index.html" class="breadcrumb__link">Trang chủ</a></li>
+          <li><a :href="route('home')" class="breadcrumb__link">Trang chủ</a></li>
           <li><span class="breadcrumb__link"></span>></li>
           <li><span class="breadcrumb__link">Cửa hàng</span></li>
           <li><span class="breadcrumb__link"></span>></li>
@@ -214,7 +214,7 @@ onMounted(() => {
                   <td><span class="cart__total-price">$250.00</span></td>
                 </tr>
             </table>
-            <a href="checkout.html" class="btn flex btn--md">
+            <a :href="route('checkout')" class="btn flex btn--md">
               <i class="fi fi-rs-box-alt"></i> Tiến hành thanh toán
             </a>
           </div>

@@ -67,7 +67,7 @@ const user = page.props.auth.user
                     </div>
                 </div>
                 <div class="header__user-actions">
-                    <a href="wishlist.html" class="header__action-btn" title="Danh sách yêu thích">
+                    <a :href="route('wishlist')" class="header__action-btn" title="Danh sách yêu thích">
                         <img src="/assets/img/icon-heart.svg" alt="" />
                         <span class="count">3</span>
                     </a>
